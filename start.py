@@ -5,9 +5,8 @@
 # import MySQLdb
 # from flask import Flask, url_for, request, session, redirect, escape
 from flask_script import Manager
-# from config.config import config
-from handle import create_app
 
+from handle import create_app
 
 app=create_app('testing')
 

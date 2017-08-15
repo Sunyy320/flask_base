@@ -16,7 +16,7 @@ class BaseConfig:
 # 继承
 class TestConfig(BaseConfig):
     DEBUG = True
-
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:root@localhost:3306/mytest?charset=utf8'
 
 config = {
     'testing': TestConfig,
