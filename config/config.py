@@ -15,6 +15,7 @@ class BaseConfig:
 class TestConfig(BaseConfig):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'mysql://root:root@localhost:3306/mytest?charset=utf8'
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 config = {
     'testing': TestConfig,
